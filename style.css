@@ -1,0 +1,22 @@
+:root{--accent:#A3123A;--bg:#fff;--fg:#1c1c1e;--muted:#6e6e73;--card:#f2f2f7;--line:#e5e5ea;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--accent:#FF6B8B;--bg:#000;--fg:#f2f2f7;--muted:#a1a1a6;--card:#1c1c1e;--line:#38383a}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--fg)}
+header,main,footer{max-width:760px;margin:0 auto;padding:0 22px}
+header{display:flex;align-items:center;justify-content:space-between;padding-top:22px;padding-bottom:10px}
+.brand{display:flex;gap:10px;align-items:center;font-weight:700;font-size:20px;color:var(--fg);text-decoration:none}
+.brand svg{width:34px;height:34px}
+nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:15px}nav a:hover,nav a[aria-current]{color:var(--accent)}
+h1{font:700 40px/1.15 -apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;letter-spacing:-.02em;margin:36px 0 10px}
+h2{font-size:22px;margin:34px 0 8px}h3{font-size:18px;margin:22px 0 6px}
+p,li{color:var(--fg)}.muted{color:var(--muted)}a{color:var(--accent)}
+.lead{font-size:21px;color:var(--muted);max-width:34em}
+.badge{display:inline-flex;align-items:center;gap:10px;background:var(--fg);color:var(--bg);border-radius:12px;padding:12px 18px;font-weight:600;text-decoration:none;margin-top:18px}
+.card{background:var(--card);border-radius:18px;padding:18px 20px;margin:14px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:26px}
+.ph{background:#fff3cd;color:#664d03;border-radius:6px;padding:0 6px;font-weight:600}
+@media (prefers-color-scheme:dark){.ph{background:#4d3b00;color:#ffe08a}}
+.note{border-left:4px solid var(--accent);padding:8px 14px;background:var(--card);border-radius:8px}
+footer{border-top:1px solid var(--line);margin-top:56px;padding-top:18px;padding-bottom:40px;font-size:14px;color:var(--muted)}
+footer a{color:var(--muted)}
+details{background:var(--card);border-radius:14px;padding:14px 18px;margin:10px 0}summary{font-weight:600;cursor:pointer}
